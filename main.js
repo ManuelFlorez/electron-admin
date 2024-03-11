@@ -1,6 +1,6 @@
-const { app, BrowserWindow, ipcMain, shell } = require('electron')
+const { app, BrowserWindow } = require('electron')
+const { openUrl } = require('./src/main/open-url.js')
 const path = require('node:path')
-const { facebook, github, instagram, linkedin, project, twitter } = require('./src/data/index.js')
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -15,29 +15,7 @@ const createWindow = () => {
   win.loadFile('index.html')
 }
 
-ipcMain.handle('open-url:github', () => {
-  shell.openExternal(github)
-})
-
-ipcMain.handle('open-url:project', () => {
-  shell.openExternal(project)
-})
-
-ipcMain.handle('open-url:facebook', () => {
-  shell.openExternal(facebook)
-})
-
-ipcMain.handle('open-url:twitter', () => {
-  shell.openExternal(twitter)
-})
-
-ipcMain.handle('open-url:linkedin', () => {
-  shell.openExternal(linkedin)
-})
-
-ipcMain.handle('open-url:instagram', () => {
-  shell.openExternal(instagram)
-})
+openUrl()
 
 app.whenReady().then(async () => {
   createWindow()
