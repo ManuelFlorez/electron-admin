@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="img-src 'self' data:; default-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Administrador de usuarios en base de datos!</title>
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1>Administrador!</h1>
+      <p>Current theme source <strong id="theme-source">System</strong></p>
+      <p>👋</p>
+      
+    </div>
+    <footer class="bg-light text-center">
+      <div class="p-4 bg-dark .bg-gradient">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <a class="btn btn-primary btn-floating m-1 facebook" href="#!" role="button"><i class="fa fa-facebook-f fa-lg"></i></a>
+          <a class="btn btn-primary btn-floating m-1 twitter" href="#!" role="button"><i class="fa fa-twitter fa-lg"></i></a>
+          <a class="btn btn-primary btn-floating m-1 google" href="#!" role="button"><i class="fa fa-google fa-lg"></i></a>
+          <a class="btn btn-primary btn-floating m-1 instagram" href="#!" role="button"><i class="fa fa-instagram fa-lg"></i></a>
+          <a class="btn btn-primary btn-floating m-1 linkedin" href="#!" role="button"><i class="fa fa-linkedin-square fa-lg"></i></a>
+          <a class="btn btn-primary btn-floating m-1 github" href="#!" role="button"><i class="fa fa-github fa-lg"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <div class="text-center p-3">
+        © 2024 copyright MIT: proyecto en github <a id="github-project" href="#">electron-admin</a>
+      </div>
+      
+    </footer>
+  </body>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./renderer.js"></script>
+</html>
