@@ -1,5 +1,5 @@
 document.getElementById('github-project')
   .addEventListener('click', async() => {
     event.preventDefault()
-    await window.openUrl.github()
+    await window.openUrl.project()
   })

@@ -1,0 +1,6 @@
+import './renderer-components/github-project.js'
+import './renderer-components/github-profile.js'
+import './renderer-components/facebook-profile.js'
+import './renderer-components/twitter-profile.js'
+import './renderer-components/instagram-profile.js'
+import './renderer-components/linkedin-profile.js'
